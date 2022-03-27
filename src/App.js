@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './index.css';
 
 const API = {
   key: "d32739f7b50e5b10888e6d3d9c437154",
@@ -8,8 +8,16 @@ const API = {
 
 function App() {
   return (
-    <div className="App">
-        hello
+    <div className="app">
+      <main>
+        <div className="search-box">
+          <input type="text" className="search-bar" placeholder="Search..." />
+        </div>
+        <div className='location-box'>
+          <div className='location'></div>
+          <div className='date'></div>
+        </div>
+      </main>
     </div>
   );
 }
